@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Reset Method — Fix Your Money, Mind & Life</title>
+  <meta name="description" content="Biweekly budget templates, savings challenges, and wellness tools — practical digital downloads built for real life, not perfect life." />
+  <meta property="og:title" content="The Reset Method" />
+  <meta property="og:description" content="Stop managing symptoms. Start resetting systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://theresetmethod.live" />
+  <link rel="canonical" href="https://theresetmethod.live" />
+  <style>
+    :root{--navy:#1B2A4A;--navy-light:#2d4a7a;--gold:#D4A017;--gold-light:#e8b520;--white:#FFFFFF;--light:#F4F6FB;--green:#27AE60;--dark:#2C3E50;--gray:#6C757D}
+    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--white);color:var(--dark)}
+    nav{background:var(--navy);padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+    .logo{color:var(--gold);font-size:1.2rem;font-weight:900;letter-spacing:-.5px;text-decoration:none}
+    .nav-links{display:flex;align-items:center;gap:1.5rem}
+    .nav-link{color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .2s}.nav-link:hover{color:#fff}
+    .nav-cta{background:var(--gold);color:var(--navy);padding:.4rem 1rem;border-radius:6px;font-weight:700;text-decoration:none;font-size:.9rem;transition:background .2s}.nav-cta:hover{background:var(--gold-light)}
+    @media(max-width:600px){.nav-links{gap:.8rem}.nav-link{font-size:.8rem}}
+    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff;padding:5rem 1.5rem 4rem;text-align:center}
+    .badge{display:inline-block;background:rgba(212,160,23,.2);border:1px solid var(--gold);color:var(--gold);padding:.3rem .9rem;border-radius:20px;font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:1.2rem}
+    .hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.1;margin-bottom:1rem}.hero h1 span{color:var(--gold)}
+    .hero>div>p{font-size:1.1rem;color:rgba(255,255,255,.8);max-width:560px;margin:0 auto 2rem;line-height:1.6}
+    .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+    .btn-primary{background:var(--gold);color:var(--navy);font-weight:900;padding:.9rem 2rem;border-radius:10px;text-decoration:none;font-size:1.05rem;transition:background .2s}.btn-primary:hover{background:var(--gold-light)}
+    .btn-secondary{border:1.5px solid rgba(255,255,255,.3);color:#fff;font-weight:600;padding:.9rem 2rem;border-radius:10px;text-decoration:none;font-size:1.05rem;transition:border-color .2s}.btn-secondary:hover{border-color:#fff}
+    .hero-sub{color:rgba(255,255,255,.35);font-size:.85rem;margin-top:1.2rem}
+    .trust-bar{background:var(--light);border-bottom:1px solid #e2e6f0;padding:.9rem 1.5rem}
+    .trust-bar ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem}
+    .trust-bar li{font-size:.85rem;color:var(--gray);font-weight:500}
+    .section{padding:5rem 1.5rem}
+    .section-title{text-align:center;margin-bottom:3rem}
+    .section-title h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:900;color:var(--navy);margin-bottom:.5rem}
+    .section-title p{color:var(--gray);font-size:1.05rem;max-width:480px;margin:0 auto}
+    .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto}
+    .card{background:#fff;border:1.5px solid #e5e9f2;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s}
+    .card:hover{border-color:var(--navy);box-shadow:0 8px 30px rgba(27,42,74,.12)}
+    .card-badge{background:var(--gold);color:var(--navy);font-size:.7rem;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;text-align:center;padding:.45rem}
+    .card-body{padding:1.8rem;flex:1;display:flex;flex-direction:column}
+    .card-emoji{font-size:2.2rem;margin-bottom:.8rem}
+    .card-name{font-size:1.1rem;font-weight:900;color:var(--navy);margin-bottom:.2rem}
+    .card-tagline{color:var(--gold);font-size:.85rem;font-weight:600;margin-bottom:.9rem}
+    .card-desc{color:var(--gray);font-size:.88rem;line-height:1.6;margin-bottom:1rem}
+    .card-bullets{list-style:none;flex:1;margin-bottom:1.2rem;display:flex;flex-direction:column;gap:.45rem}
+    .card-bullets li{font-size:.85rem;color:var(--dark);display:flex;gap:.5rem}.card-bullets li::before{content:"\2713";color:var(--green);flex-shrink:0;margin-top:1px}
+    .card-footer{border-top:1px solid #f0f2f8;padding-top:1.2rem;display:flex;flex-direction:column;gap:.6rem}
+    .btn-buy{display:block;background:var(--navy);color:#fff;text-align:center;padding:.75rem;border-radius:8px;font-weight:700;text-decoration:none;font-size:.95rem;transition:background .2s}.btn-buy:hover{background:var(--navy-light)}
+    .btn-mrr{display:block;border:2px solid var(--gold);color:var(--navy);text-align:center;padding:.6rem;border-radius:8px;font-weight:700;text-decoration:none;font-size:.85rem;transition:background .2s}.btn-mrr:hover{background:rgba(212,160,23,.08)}
+    .btn-mrr span{color:var(--gray);font-weight:400}
+    .bundle-section{background:var(--navy);padding:5rem 1.5rem;text-align:center}
+    .bundle-inner{max-width:700px;margin:0 auto}
+    .bundle-inner h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:900;color:#fff;margin-bottom:.8rem}
+    .bundle-desc{color:rgba(255,255,255,.7);font-size:1.05rem;line-height:1.6;margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto}
+    .bundle-includes{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.8rem;margin-bottom:2rem;text-align:left}
+    .bundle-includes h4{color:var(--gold);font-size:.8rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:1rem}
+    .bundle-includes ul{list-style:none;display:flex;flex-direction:column;gap:.8rem}
+    .bundle-includes li{color:#fff;display:flex;gap:.75rem;align-items:center}.bundle-includes li::before{content:"\2713";color:var(--green);font-size:1.1rem;flex-shrink:0}
+    .bundle-price{display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1.5rem}
+    .bundle-price .old{color:rgba(255,255,255,.3);font-size:1.3rem;text-decoration:line-through}
+    .bundle-price .new{color:var(--gold);font-size:3.5rem;font-weight:900;line-height:1}
+    .bundle-price .save{background:var(--green);color:#fff;font-size:.8rem;font-weight:700;padding:.3rem .7rem;border-radius:20px}
+    .btn-bundle{display:inline-block;background:var(--gold);color:var(--navy);font-weight:900;font-size:1.2rem;padding:1.1rem 3rem;border-radius:12px;text-decoration:none;transition:background .2s}.btn-bundle:hover{background:var(--gold-light)}
+    .bundle-note{color:rgba(255,255,255,.35);font-size:.83rem;margin-top:.8rem}
+    .free-section{background:var(--light);padding:5rem 1.5rem;text-align:center}
+    .free-inner{max-width:560px;margin:0 auto}
+    .free-emoji{font-size:3.5rem;margin-bottom:1rem}
+    .free-section h2{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:900;color:var(--navy);margin-bottom:.8rem}
+    .free-section>div>p{color:var(--gray);font-size:1.05rem;line-height:1.6;margin-bottom:1.5rem}
+    .btn-free{display:inline-block;background:var(--green);color:#fff;font-weight:900;font-size:1.05rem;padding:.9rem 2.5rem;border-radius:10px;text-decoration:none;transition:background .2s}.btn-free:hover{background:#219a52}
+    .free-sub{color:var(--gray);font-size:.82rem;margin-top:.8rem}
+    .testimonials{padding:5rem 1.5rem;background:#fff}
+    .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:960px;margin:0 auto}
+    .testimonial{background:var(--light);border-radius:14px;padding:1.8rem}
+    .testimonial blockquote{color:var(--dark);font-size:.9rem;line-height:1.65;margin-bottom:1rem;font-style:italic}
+    .testimonial cite{font-style:normal}.testimonial cite strong{display:block;font-weight:700;color:var(--navy);font-size:.88rem}
+    .testimonial cite span{color:var(--gray);font-size:.78rem}
+    .tools-section{background:var(--light);padding:5rem 1.5rem}
+    .tools-inner{max-width:860px;margin:0 auto}
+    .tools-disclosure{background:rgba(27,42,74,.06);border-left:3px solid var(--gold);padding:.7rem 1rem;font-size:.8rem;color:var(--gray);margin-bottom:2.5rem;border-radius:0 6px 6px 0}
+    .tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-bottom:2rem}
+    .tool-card{background:#fff;border:1.5px solid #e5e9f2;border-radius:12px;padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;transition:border-color .2s,box-shadow .2s}
+    .tool-card:hover{border-color:var(--navy);box-shadow:0 4px 20px rgba(27,42,74,.1)}
+    .tool-label{font-size:.7rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold)}
+    .tool-name{font-size:.95rem;font-weight:800;color:var(--navy);line-height:1.3}
+    .tool-why{font-size:.82rem;color:var(--gray);line-height:1.5;flex:1}
+    .tool-link{display:inline-block;background:var(--navy);color:#fff;padding:.5rem .9rem;border-radius:7px;font-size:.8rem;font-weight:700;text-decoration:none;text-align:center;transition:background .2s;margin-top:.4rem}.tool-link:hover{background:var(--navy-light)}
+    footer{background:var(--navy);color:rgba(255,255,255,.5);padding:3rem 1.5rem;text-align:center}
+    .footer-brand{color:var(--gold);font-weight:900;font-size:1.1rem;margin-bottom:.5rem}
+    .footer-tagline{margin-bottom:1.5rem;font-size:.9rem}
+    .footer-links{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.5rem}
+    .footer-links a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.88rem;transition:color .2s}.footer-links a:hover{color:#fff}
+    .footer-copy{color:rgba(255,255,255,.2);font-size:.78rem}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">The Reset Method</a>
+  <div class="nav-links">
+    <a href="#products" class="nav-link">Products</a>
+    <a href="#bundle" class="nav-link">Bundle</a>
+    <a href="#free" class="nav-link">Free Template</a>
+    <a href="#tools" class="nav-link">Tools</a>
+    <a href="#products" class="nav-cta">Shop Now</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <div class="badge">Digital Tools That Actually Work</div>
+    <h1>Stop Managing Symptoms.<br><span>Start Resetting Systems.</span></h1>
+    <p>Practical digital tools for your money, your mind, and your boundaries — built for real life, not perfect life.</p>
+    <div class="hero-btns">
+      <a href="#products" class="btn-primary">Browse All Products</a>
+      <a href="#free" class="btn-secondary">Get Free Template</a>
+    </div>
+    <p class="hero-sub">Instant download &middot; Works on mobile &middot; No subscription needed</p>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <ul>
+    <li>&#10003; Instant digital download</li>
+    <li>&#10003; Built for biweekly paychecks</li>
+    <li>&#10003; Works in Google Sheets &amp; Excel</li>
+    <li>&#10003; No monthly subscription</li>
+    <li>&#10003; 30-day satisfaction guarantee</li>
+  </ul>
+</div>
+
+<section class="section" id="products" style="background:#fff">
+  <div class="section-title">
+    <h2>Pick Your Reset</h2>
+    <p>Four focused tools. Each one solves a specific problem — no fluff, no filler.</p>
+  </div>
+  <div class="products-grid">
+
+    <div class="card">
+      <div class="card-badge">Most Popular</div>
+      <div class="card-body">
+        <div class="card-emoji">&#128176;</div>
+        <div class="card-name">The Paycheck Reset</div>
+        <div class="card-tagline">Budget like you actually get paid biweekly</div>
+        <div class="card-desc">A pre-built spreadsheet that auto-calculates your finances around your real paycheck schedule — not some idealized monthly budget nobody sticks to.</div>
+        <ul class="card-bullets">
+          <li>Auto-splits income between bills, savings &amp; spending</li>
+          <li>Built-in leftover tracker so nothing slips through</li>
+          <li>Works with any paycheck amount or frequency</li>
+          <li>Instant download — Google Sheets or Excel</li>
+        </ul>
+        <div class="card-footer">
+          <a href="https://battlecaster.gumroad.com/l/orbme?wanted=true&utm_source=theresetmethod&utm_medium=product_card&utm_campaign=storefront" target="_blank" class="btn-buy">Buy Now — $9.99</a>
+          <a href="https://battlecaster.gumroad.com/l/orbme?wanted=true&utm_source=theresetmethod&utm_medium=mrr_card&utm_campaign=storefront" target="_blank" class="btn-mrr">+ Resell Rights — $19 <span>(sell as your own)</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="card-emoji">&#127919;</div>
+        <div class="card-name">The $500 Emergency Fund Challenge</div>
+        <div class="card-tagline">Build your first safety net in 30 days</div>
+        <div class="card-desc">A step-by-step 30-day challenge that shows you exactly where to find $500 — even when you feel like you have nothing left over.</div>
+        <ul class="card-bullets">
+          <li>Daily micro-tasks — 5 minutes a day, real results</li>
+          <li>15 specific money-finding strategies most people miss</li>
+          <li>Printable tracker to keep momentum visible</li>
+          <li>Works even on a tight, paycheck-to-paycheck income</li>
+        </ul>
+        <div class="card-footer">
+          <a href="https://battlecaster.gumroad.com/l/500challenge?wanted=true&utm_source=theresetmethod&utm_medium=product_card&utm_campaign=storefront" target="_blank" class="btn-buy">Buy Now — $17</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="card-emoji">&#129504;</div>
+        <div class="card-name">Anxious Girl's Boundaries Playbook</div>
+        <div class="card-tagline">Say no without the guilt spiral</div>
+        <div class="card-desc">Scripts, frameworks, and mindset shifts for people who over-give, over-explain, and feel exhausted by everyone else's needs — including at work.</div>
+        <ul class="card-bullets">
+          <li>Word-for-word scripts for 20 hard boundary situations</li>
+          <li>The guilt detox framework — stop apologizing for limits</li>
+          <li>Work boundaries: bosses, coworkers, after-hours texts</li>
+          <li>Instant download PDF — start reading in 60 seconds</li>
+        </ul>
+        <div class="card-footer">
+          <a href="https://battlecaster.gumroad.com/l/boundariesplaybook?wanted=true&utm_source=theresetmethod&utm_medium=product_card&utm_campaign=storefront" target="_blank" class="btn-buy">Buy Now — $29</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="card-emoji">&#127754;</div>
+        <div class="card-name">The Calm Brain Toolkit</div>
+        <div class="card-tagline">Stop the spiral. Reset your nervous system.</div>
+        <div class="card-desc">A practical toolkit for overthinkers and anxious minds — with science-backed techniques you can use in 2 minutes or 20.</div>
+        <ul class="card-bullets">
+          <li>12 grounding techniques ranked by speed (2-20 min)</li>
+          <li>Thought audit worksheet — interrupt rumination loops</li>
+          <li>Evening wind-down protocol for racing-mind nights</li>
+          <li>Bonus: morning nervous system reset routine</li>
+        </ul>
+        <div class="card-footer">
+          <a href="https://battlecaster.gumroad.com/l/calmbrain?wanted=true&utm_source=theresetmethod&utm_medium=product_card&utm_campaign=storefront" target="_blank" class="btn-buy">Buy Now — $32</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bundle-section" id="bundle">
+  <div class="bundle-inner">
+    <div class="badge">Best Value</div>
+    <h2>The Full Reset Bundle</h2>
+    <p class="bundle-desc">All 4 products + Canva template files + Master Resell Rights. Buy once, keep forever — or resell as your own and keep 100% of revenue.</p>
+    <div class="bundle-includes">
+      <h4>What's included:</h4>
+      <ul>
+        <li>All 4 Reset Method digital products</li>
+        <li>Canva editable template files</li>
+        <li>Master Resell Rights license</li>
+        <li>Sell as your own — keep 100% of revenue</li>
+      </ul>
+    </div>
+    <div class="bundle-price">
+      <span class="old">$88</span>
+      <span class="new">$47</span>
+      <span class="save">Save $41</span>
+    </div>
+    <a href="https://battlecaster.gumroad.com/l/fullresetbundle?wanted=true&utm_source=theresetmethod&utm_medium=bundle_section&utm_campaign=storefront" target="_blank" class="btn-bundle">Get the Full Bundle — $47</a>
+    <p class="bundle-note">Includes Master Resell Rights — sell all 4 products as your own, keep 100%</p>
+  </div>
+</section>
+
+<section class="free-section" id="free">
+  <div class="free-inner">
+    <div class="free-emoji">&#127873;</div>
+    <h2>Free: 1-Page Budget Reset Template</h2>
+    <p>Before you buy anything — try this. A single-page budget template you can fill out in 10 minutes. No email required.</p>
+    <a href="https://battlecaster.gumroad.com/l/freebudget?utm_source=theresetmethod&utm_medium=free_section&utm_campaign=storefront" target="_blank" class="btn-free">Download Free Template</a>
+    <p class="free-sub">No signup required &middot; Instant access &middot; Google Sheets + Excel</p>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="section-title"><h2>Real results from real people</h2></div>
+  <div class="testimonials-grid">
+    <div class="testimonial">
+      <blockquote>"I've tried 6 budget apps. This spreadsheet is the only thing I've actually stuck with for more than 3 weeks."</blockquote>
+      <cite><strong>Brianna T.</strong><span>Paycheck-to-paycheck nurse, single mom</span></cite>
+    </div>
+    <div class="testimonial">
+      <blockquote>"The $500 challenge felt impossible. I found $520 in month one by following the daily tasks."</blockquote>
+      <cite><strong>Marcus L.</strong><span>Rideshare driver, Atlanta</span></cite>
+    </div>
+    <div class="testimonial">
+      <blockquote>"The boundaries scripts saved my job. I was about to quit because I couldn't say no to extra shifts."</blockquote>
+      <cite><strong>Destiny R.</strong><span>Retail manager</span></cite>
+    </div>
+  </div>
+</section>
+
+<section class="tools-section" id="tools">
+  <div class="tools-inner">
+    <div class="section-title">
+      <h2>Tools I Recommend</h2>
+      <p>The physical tools I pair with every budget template. The right supplies turn a download into a daily habit.</p>
+    </div>
+    <div class="tools-disclosure">
+      <strong>Disclosure:</strong> Some links below are Amazon affiliate links. I may earn a small commission at no extra cost to you — I only recommend things I'd actually use.
+    </div>
+    <div class="tools-grid">
+
+      <div class="tool-card">
+        <div class="tool-label">For Printing</div>
+        <div class="tool-name">HP Multipurpose Printer Paper (500-sheet ream)</div>
+        <div class="tool-why">If printing feels inconvenient, you won't do it. Keep a ream on hand and your budget actually gets printed.</div>
+        <a href="https://www.amazon.com/s?k=HP+multipurpose+printer+paper+500+sheet+ream&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-label">For Organizing</div>
+        <div class="tool-name">Budget Binder with Zipper Pouch</div>
+        <div class="tool-why">One physical home for all your monthly printouts. Keeps your system visible and off the kitchen counter.</div>
+        <a href="https://www.amazon.com/s?k=budget+binder+zipper+pouch+money+organizer&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-label">For Cash Tracking</div>
+        <div class="tool-name">Cash Envelope Wallet System</div>
+        <div class="tool-why">Pairs perfectly with a zero-based budget template. Physical cash = physical limit. Hard to overspend when the envelope is empty.</div>
+        <a href="https://www.amazon.com/s?k=cash+envelope+wallet+budget+system&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-label">For Color-Coding</div>
+        <div class="tool-name">Zebra Mildliner Highlighters</div>
+        <div class="tool-why">Green = on track. Yellow = watch it. Pink = stop. Visual cues work better than willpower.</div>
+        <a href="https://www.amazon.com/s?k=zebra+mildliner+highlighters+set&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-label">Must-Read Book</div>
+        <div class="tool-name">I Will Teach You To Be Rich — Ramit Sethi</div>
+        <div class="tool-why">Not "spend less, save more" advice. This book rewired how I actually think about money. Read it once a year.</div>
+        <a href="https://www.amazon.com/s?k=I+Will+Teach+You+To+Be+Rich+Ramit+Sethi&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-label">Must-Read Book</div>
+        <div class="tool-name">The Total Money Makeover — Dave Ramsey</div>
+        <div class="tool-why">The most recommended book in every paycheck-to-paycheck community. The debt snowball method is simple and it works.</div>
+        <a href="https://www.amazon.com/s?k=Total+Money+Makeover+Dave+Ramsey&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">The Reset Method</div>
+  <div class="footer-tagline">Practical tools for real life. No fluff. No subscriptions.</div>
+  <div class="footer-links">
+    <a href="https://twitter.com/casbattle" target="_blank">Twitter/X</a>
+    <a href="https://instagram.com/casey.b.designs" target="_blank">Instagram</a>
+    <a href="https://pinterest.com/theresetmethod" target="_blank">Pinterest</a>
+    <a href="https://battlecaster.gumroad.com" target="_blank">Gumroad Store</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 The Reset Method &middot; All products delivered as instant digital downloads</div>
+</footer>
+
+</body>
+</html>

@@ -1,97 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Reset Method — Fix Your Money, Mind & Life</title>
-  <meta name="description" content="Biweekly budget templates, savings challenges, and wellness tools — practical digital downloads built for real life, not perfect life." />
-  <meta property="og:title" content="The Reset Method" />
-  <meta property="og:description" content="Stop managing symptoms. Start resetting systems." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://theresetmethod.live" />
-  <link rel="canonical" href="https://theresetmethod.live" />
+  <meta name="description" content="Biweekly budget templates, savings challenges, and wellness tools. Practical digital downloads built for real life.">
+  <meta property="og:title" content="The Reset Method">
+  <meta property="og:description" content="Stop managing symptoms. Start resetting systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theresetmethod.live">
+  <link rel="canonical" href="https://theresetmethod.live">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    :root{--navy:#1B2A4A;--navy-light:#2d4a7a;--gold:#D4A017;--gold-light:#e8b520;--white:#FFFFFF;--light:#F4F6FB;--green:#27AE60;--dark:#2C3E50;--gray:#6C757D}
-    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--white);color:var(--dark)}
-    nav{background:var(--navy);padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-    .logo{color:var(--gold);font-size:1.2rem;font-weight:900;letter-spacing:-.5px;text-decoration:none}
-    .nav-links{display:flex;align-items:center;gap:1.5rem}
-    .nav-link{color:rgba(255,255,255,.7);text-decoration:none;font-size:.9rem;transition:color .2s}.nav-link:hover{color:#fff}
-    .nav-cta{background:var(--gold);color:var(--navy);padding:.4rem 1rem;border-radius:6px;font-weight:700;text-decoration:none;font-size:.9rem;transition:background .2s}.nav-cta:hover{background:var(--gold-light)}
-    @media(max-width:600px){.nav-links{gap:.8rem}.nav-link{font-size:.8rem}}
-    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);color:#fff;padding:5rem 1.5rem 4rem;text-align:center}
-    .badge{display:inline-block;background:rgba(212,160,23,.2);border:1px solid var(--gold);color:var(--gold);padding:.3rem .9rem;border-radius:20px;font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:1.2rem}
-    .hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.1;margin-bottom:1rem}.hero h1 span{color:var(--gold)}
-    .hero>div>p{font-size:1.1rem;color:rgba(255,255,255,.8);max-width:560px;margin:0 auto 2rem;line-height:1.6}
-    .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-    .btn-primary{background:var(--gold);color:var(--navy);font-weight:900;padding:.9rem 2rem;border-radius:10px;text-decoration:none;font-size:1.05rem;transition:background .2s}.btn-primary:hover{background:var(--gold-light)}
-    .btn-secondary{border:1.5px solid rgba(255,255,255,.3);color:#fff;font-weight:600;padding:.9rem 2rem;border-radius:10px;text-decoration:none;font-size:1.05rem;transition:border-color .2s}.btn-secondary:hover{border-color:#fff}
-    .hero-sub{color:rgba(255,255,255,.35);font-size:.85rem;margin-top:1.2rem}
-    .trust-bar{background:var(--light);border-bottom:1px solid #e2e6f0;padding:.9rem 1.5rem}
-    .trust-bar ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem}
-    .trust-bar li{font-size:.85rem;color:var(--gray);font-weight:500}
-    .section{padding:5rem 1.5rem}
-    .section-title{text-align:center;margin-bottom:3rem}
-    .section-title h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:900;color:var(--navy);margin-bottom:.5rem}
-    .section-title p{color:var(--gray);font-size:1.05rem;max-width:480px;margin:0 auto}
-    .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto}
-    .card{background:#fff;border:1.5px solid #e5e9f2;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s}
-    .card:hover{border-color:var(--navy);box-shadow:0 8px 30px rgba(27,42,74,.12)}
-    .card-badge{background:var(--gold);color:var(--navy);font-size:.7rem;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;text-align:center;padding:.45rem}
-    .card-body{padding:1.8rem;flex:1;display:flex;flex-direction:column}
-    .card-emoji{font-size:2.2rem;margin-bottom:.8rem}
-    .card-name{font-size:1.1rem;font-weight:900;color:var(--navy);margin-bottom:.2rem}
-    .card-tagline{color:var(--gold);font-size:.85rem;font-weight:600;margin-bottom:.9rem}
-    .card-desc{color:var(--gray);font-size:.88rem;line-height:1.6;margin-bottom:1rem}
-    .card-bullets{list-style:none;flex:1;margin-bottom:1.2rem;display:flex;flex-direction:column;gap:.45rem}
-    .card-bullets li{font-size:.85rem;color:var(--dark);display:flex;gap:.5rem}.card-bullets li::before{content:"\2713";color:var(--green);flex-shrink:0;margin-top:1px}
-    .card-footer{border-top:1px solid #f0f2f8;padding-top:1.2rem;display:flex;flex-direction:column;gap:.6rem}
-    .btn-buy{display:block;background:var(--navy);color:#fff;text-align:center;padding:.75rem;border-radius:8px;font-weight:700;text-decoration:none;font-size:.95rem;transition:background .2s}.btn-buy:hover{background:var(--navy-light)}
-    .btn-mrr{display:block;border:2px solid var(--gold);color:var(--navy);text-align:center;padding:.6rem;border-radius:8px;font-weight:700;text-decoration:none;font-size:.85rem;transition:background .2s}.btn-mrr:hover{background:rgba(212,160,23,.08)}
-    .btn-mrr span{color:var(--gray);font-weight:400}
-    .bundle-section{background:var(--navy);padding:5rem 1.5rem;text-align:center}
-    .bundle-inner{max-width:700px;margin:0 auto}
-    .bundle-inner h2{font-size:clamp(1.8rem,4vw,2.5rem);font-weight:900;color:#fff;margin-bottom:.8rem}
-    .bundle-desc{color:rgba(255,255,255,.7);font-size:1.05rem;line-height:1.6;margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto}
-    .bundle-includes{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.8rem;margin-bottom:2rem;text-align:left}
-    .bundle-includes h4{color:var(--gold);font-size:.8rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:1rem}
-    .bundle-includes ul{list-style:none;display:flex;flex-direction:column;gap:.8rem}
-    .bundle-includes li{color:#fff;display:flex;gap:.75rem;align-items:center}.bundle-includes li::before{content:"\2713";color:var(--green);font-size:1.1rem;flex-shrink:0}
-    .bundle-price{display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1.5rem}
-    .bundle-price .old{color:rgba(255,255,255,.3);font-size:1.3rem;text-decoration:line-through}
-    .bundle-price .new{color:var(--gold);font-size:3.5rem;font-weight:900;line-height:1}
-    .bundle-price .save{background:var(--green);color:#fff;font-size:.8rem;font-weight:700;padding:.3rem .7rem;border-radius:20px}
-    .btn-bundle{display:inline-block;background:var(--gold);color:var(--navy);font-weight:900;font-size:1.2rem;padding:1.1rem 3rem;border-radius:12px;text-decoration:none;transition:background .2s}.btn-bundle:hover{background:var(--gold-light)}
-    .bundle-note{color:rgba(255,255,255,.35);font-size:.83rem;margin-top:.8rem}
-    .free-section{background:var(--light);padding:5rem 1.5rem;text-align:center}
-    .free-inner{max-width:560px;margin:0 auto}
-    .free-emoji{font-size:3.5rem;margin-bottom:1rem}
-    .free-section h2{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:900;color:var(--navy);margin-bottom:.8rem}
-    .free-section>div>p{color:var(--gray);font-size:1.05rem;line-height:1.6;margin-bottom:1.5rem}
-    .btn-free{display:inline-block;background:var(--green);color:#fff;font-weight:900;font-size:1.05rem;padding:.9rem 2.5rem;border-radius:10px;text-decoration:none;transition:background .2s}.btn-free:hover{background:#219a52}
-    .free-sub{color:var(--gray);font-size:.82rem;margin-top:.8rem}
-    .testimonials{padding:5rem 1.5rem;background:#fff}
-    .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:960px;margin:0 auto}
-    .testimonial{background:var(--light);border-radius:14px;padding:1.8rem}
-    .testimonial blockquote{color:var(--dark);font-size:.9rem;line-height:1.65;margin-bottom:1rem;font-style:italic}
-    .testimonial cite{font-style:normal}.testimonial cite strong{display:block;font-weight:700;color:var(--navy);font-size:.88rem}
-    .testimonial cite span{color:var(--gray);font-size:.78rem}
-    .tools-section{background:var(--light);padding:5rem 1.5rem}
-    .tools-inner{max-width:860px;margin:0 auto}
-    .tools-disclosure{background:rgba(27,42,74,.06);border-left:3px solid var(--gold);padding:.7rem 1rem;font-size:.8rem;color:var(--gray);margin-bottom:2.5rem;border-radius:0 6px 6px 0}
-    .tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-bottom:2rem}
-    .tool-card{background:#fff;border:1.5px solid #e5e9f2;border-radius:12px;padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;transition:border-color .2s,box-shadow .2s}
-    .tool-card:hover{border-color:var(--navy);box-shadow:0 4px 20px rgba(27,42,74,.1)}
-    .tool-label{font-size:.7rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold)}
-    .tool-name{font-size:.95rem;font-weight:800;color:var(--navy);line-height:1.3}
-    .tool-why{font-size:.82rem;color:var(--gray);line-height:1.5;flex:1}
-    .tool-link{display:inline-block;background:var(--navy);color:#fff;padding:.5rem .9rem;border-radius:7px;font-size:.8rem;font-weight:700;text-decoration:none;text-align:center;transition:background .2s;margin-top:.4rem}.tool-link:hover{background:var(--navy-light)}
-    footer{background:var(--navy);color:rgba(255,255,255,.5);padding:3rem 1.5rem;text-align:center}
-    .footer-brand{color:var(--gold);font-weight:900;font-size:1.1rem;margin-bottom:.5rem}
-    .footer-tagline{margin-bottom:1.5rem;font-size:.9rem}
-    .footer-links{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.5rem}
-    .footer-links a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.88rem;transition:color .2s}.footer-links a:hover{color:#fff}
-    .footer-copy{color:rgba(255,255,255,.2);font-size:.78rem}
+    :root {
+      --navy: #0F172A;
+      --navy-mid: #1E293B;
+      --gold: #F59E0B;
+      --gold-light: #FBBF24;
+      --gold-dark: #D97706;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFC;
+      --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0;
+      --gray-400: #94A3B8;
+      --gray-500: #64748B;
+      --gray-600: #475569;
+      --gray-900: #0F172A;
+      --green: #10B981;
+      --radius: 16px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: var(--white); color: var(--gray-900); -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { background: var(--navy); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+    .logo { color: var(--gold); font-size: 1.15rem; font-weight: 800; letter-spacing: -0.5px; text-decoration: none; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-link { color: var(--gray-400); text-decoration: none; font-size: .85rem; font-weight: 500; transition: color .2s; }
+    .nav-link:hover { color: #fff; }
+    .nav-cta { background: var(--gold); color: var(--navy); padding: .5rem 1.2rem; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: .85rem; transition: all .2s; }
+    .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+    @media(max-width:768px) { .nav-links { gap: 1rem; } .nav-link { display: none; } }
+
+    /* HERO */
+    .hero { background: linear-gradient(160deg, var(--navy) 0%, #1a2744 50%, var(--navy-mid) 100%); color: #fff; padding: 6rem 2rem 5rem; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(245,158,11,.08) 0%, transparent 70%); }
+    .hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    @media(max-width:900px) { .hero-inner { grid-template-columns: 1fr; text-align: center; } }
+    .hero-badge { display: inline-flex; align-items: center; gap: .5rem; background: rgba(245,158,11,.12); border: 1px solid rgba(245,158,11,.25); color: var(--gold); padding: .35rem .9rem; border-radius: 100px; font-size: .75rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1.5rem; }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.08; margin-bottom: 1.2rem; letter-spacing: -1.5px; }
+    .hero h1 span { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.1rem; color: var(--gray-400); line-height: 1.7; margin-bottom: 2rem; max-width: 480px; }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    @media(max-width:900px) { .hero p { margin: 0 auto 2rem; } .hero-btns { justify-content: center; } }
+    .btn-primary { background: var(--gold); color: var(--navy); font-weight: 800; padding: .85rem 2rem; border-radius: 10px; text-decoration: none; font-size: 1rem; transition: all .2s; display: inline-flex; align-items: center; gap: .5rem; }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(245,158,11,.25); }
+    .btn-ghost { border: 1.5px solid rgba(255,255,255,.15); color: #fff; font-weight: 600; padding: .85rem 2rem; border-radius: 10px; text-decoration: none; font-size: 1rem; transition: all .2s; }
+    .btn-ghost:hover { border-color: rgba(255,255,255,.4); background: rgba(255,255,255,.05); }
+    .hero-img { border-radius: 20px; overflow: hidden; box-shadow: 0 25px 60px rgba(0,0,0,.4); }
+    .hero-img img { width: 100%; display: block; }
+    .hero-stats { display: flex; gap: 2.5rem; margin-top: 2.5rem; }
+    .hero-stat { text-align: left; }
+    .hero-stat strong { display: block; font-size: 1.5rem; font-weight: 800; color: #fff; }
+    .hero-stat span { font-size: .8rem; color: var(--gray-400); }
+    @media(max-width:900px) { .hero-stats { justify-content: center; } .hero-stat { text-align: center; } }
+
+    /* TRUST */
+    .trust { background: var(--gray-50); border-bottom: 1px solid var(--gray-200); padding: 1rem 2rem; }
+    .trust ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 900px; margin: 0 auto; }
+    .trust li { font-size: .82rem; color: var(--gray-500); font-weight: 500; display: flex; align-items: center; gap: .4rem; }
+    .trust li svg { width: 16px; height: 16px; color: var(--green); flex-shrink: 0; }
+
+    /* SECTIONS */
+    .section { padding: 5rem 2rem; }
+    .section-header { text-align: center; margin-bottom: 3.5rem; }
+    .section-header h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 900; color: var(--navy); margin-bottom: .6rem; letter-spacing: -1px; }
+    .section-header p { color: var(--gray-500); font-size: 1.05rem; max-width: 500px; margin: 0 auto; line-height: 1.6; }
+
+    /* PRODUCTS */
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
+    .product-card { background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius); overflow: hidden; transition: all .3s; display: flex; flex-direction: column; }
+    .product-card:hover { border-color: var(--gold); box-shadow: 0 12px 40px rgba(15,23,42,.08); transform: translateY(-4px); }
+    .product-tag { background: var(--gold); color: var(--navy); font-size: .68rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; text-align: center; padding: .4rem; }
+    .product-body { padding: 2rem; flex: 1; display: flex; flex-direction: column; }
+    .product-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .product-name { font-size: 1.15rem; font-weight: 800; color: var(--navy); margin-bottom: .3rem; letter-spacing: -.3px; }
+    .product-tagline { color: var(--gold-dark); font-size: .82rem; font-weight: 600; margin-bottom: 1rem; }
+    .product-desc { color: var(--gray-500); font-size: .87rem; line-height: 1.65; margin-bottom: 1.2rem; }
+    .product-features { list-style: none; flex: 1; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: .5rem; }
+    .product-features li { font-size: .83rem; color: var(--gray-600); display: flex; gap: .5rem; align-items: flex-start; }
+    .product-features li svg { width: 16px; height: 16px; color: var(--green); flex-shrink: 0; margin-top: 2px; }
+    .product-footer { border-top: 1px solid var(--gray-100); padding-top: 1.2rem; display: flex; flex-direction: column; gap: .5rem; }
+    .btn-buy { display: block; background: var(--navy); color: #fff; text-align: center; padding: .75rem; border-radius: 10px; font-weight: 700; text-decoration: none; font-size: .92rem; transition: all .2s; }
+    .btn-buy:hover { background: var(--navy-mid); transform: translateY(-1px); }
+
+    /* BUNDLE */
+    .bundle { background: var(--navy); padding: 5rem 2rem; text-align: center; position: relative; overflow: hidden; }
+    .bundle::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 800px; height: 400px; background: radial-gradient(ellipse, rgba(245,158,11,.06) 0%, transparent 70%); }
+    .bundle-inner { max-width: 700px; margin: 0 auto; position: relative; }
+    .bundle-inner h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: #fff; margin-bottom: .8rem; letter-spacing: -1px; }
+    .bundle-desc { color: var(--gray-400); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2.5rem; }
+    .bundle-grid { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 2rem; margin-bottom: 2.5rem; text-align: left; }
+    .bundle-grid h4 { color: var(--gold); font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1.2rem; }
+    .bundle-grid ul { list-style: none; display: flex; flex-direction: column; gap: .9rem; }
+    .bundle-grid li { color: rgba(255,255,255,.85); display: flex; gap: .75rem; align-items: center; font-size: .95rem; }
+    .bundle-grid li svg { width: 18px; height: 18px; color: var(--green); flex-shrink: 0; }
+    .bundle-price { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.5rem; }
+    .bundle-price .old { color: rgba(255,255,255,.25); font-size: 1.4rem; text-decoration: line-through; }
+    .bundle-price .new { color: var(--gold); font-size: 4rem; font-weight: 900; line-height: 1; letter-spacing: -2px; }
+    .bundle-price .save-badge { background: var(--green); color: #fff; font-size: .75rem; font-weight: 700; padding: .3rem .8rem; border-radius: 100px; }
+    .btn-bundle { display: inline-block; background: var(--gold); color: var(--navy); font-weight: 800; font-size: 1.15rem; padding: 1rem 3rem; border-radius: 12px; text-decoration: none; transition: all .2s; }
+    .btn-bundle:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(245,158,11,.3); }
+
+    /* FREE */
+    .free { background: var(--gray-50); padding: 5rem 2rem; text-align: center; }
+    .free-inner { max-width: 560px; margin: 0 auto; }
+    .free h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 900; color: var(--navy); margin-bottom: .8rem; }
+    .free p { color: var(--gray-500); font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; }
+    .btn-free { display: inline-block; background: var(--green); color: #fff; font-weight: 800; font-size: 1rem; padding: .85rem 2.5rem; border-radius: 10px; text-decoration: none; transition: all .2s; }
+    .btn-free:hover { background: #059669; transform: translateY(-2px); }
+
+    /* TESTIMONIALS */
+    .testimonials { padding: 5rem 2rem; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+    .testimonial { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 2rem; }
+    .testimonial .stars { color: var(--gold); font-size: .9rem; margin-bottom: .8rem; }
+    .testimonial blockquote { color: var(--gray-600); font-size: .9rem; line-height: 1.7; margin-bottom: 1rem; font-style: normal; }
+    .testimonial cite { font-style: normal; }
+    .testimonial cite strong { display: block; font-weight: 700; color: var(--navy); font-size: .88rem; }
+    .testimonial cite span { color: var(--gray-400); font-size: .78rem; }
+
+    /* TOOLS */
+    .tools { background: var(--gray-50); padding: 5rem 2rem; }
+    .tools-inner { max-width: 900px; margin: 0 auto; }
+    .tools-disclosure { background: rgba(15,23,42,.03); border-left: 3px solid var(--gold); padding: .7rem 1rem; font-size: .78rem; color: var(--gray-500); margin-bottom: 2.5rem; border-radius: 0 8px 8px 0; }
+    .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; }
+    .tool-card { background: #fff; border: 1px solid var(--gray-200); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; gap: .5rem; transition: all .2s; }
+    .tool-card:hover { border-color: var(--navy); box-shadow: 0 4px 20px rgba(15,23,42,.06); transform: translateY(-2px); }
+    .tool-label { font-size: .68rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-dark); }
+    .tool-name { font-size: .95rem; font-weight: 800; color: var(--navy); }
+    .tool-why { font-size: .82rem; color: var(--gray-500); line-height: 1.6; flex: 1; }
+    .tool-link { display: inline-flex; align-items: center; gap: .3rem; background: var(--navy); color: #fff; padding: .5rem 1rem; border-radius: 8px; font-size: .8rem; font-weight: 700; text-decoration: none; transition: all .2s; margin-top: .5rem; width: fit-content; }
+    .tool-link:hover { background: var(--navy-mid); }
+
+    /* FOOTER */
+    footer { background: var(--navy); color: rgba(255,255,255,.4); padding: 3.5rem 2rem; }
+    .footer-inner { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; }
+    @media(max-width:600px) { .footer-inner { flex-direction: column; text-align: center; } }
+    .footer-brand { color: var(--gold); font-weight: 800; font-size: 1.1rem; margin-bottom: .3rem; }
+    .footer-tagline { font-size: .85rem; }
+    .footer-socials { display: flex; gap: 1rem; }
+    .footer-socials a { color: rgba(255,255,255,.35); transition: color .2s; display: flex; }
+    .footer-socials a:hover { color: var(--gold); }
+    .footer-socials svg { width: 22px; height: 22px; }
+    .footer-copy { width: 100%; text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.06); font-size: .75rem; color: rgba(255,255,255,.2); }
+
+    /* CHECK SVG */
+    .check-svg { display: inline-block; }
   </style>
 </head>
 <body>
@@ -108,105 +176,113 @@
 </nav>
 
 <section class="hero">
-  <div>
-    <div class="badge">Digital Tools That Actually Work</div>
-    <h1>Stop Managing Symptoms.<br><span>Start Resetting Systems.</span></h1>
-    <p>Practical digital tools for your money, your mind, and your boundaries — built for real life, not perfect life.</p>
-    <div class="hero-btns">
-      <a href="#products" class="btn-primary">Browse All Products</a>
-      <a href="#free" class="btn-secondary">Get Free Template</a>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">Digital Tools That Actually Work</div>
+      <h1>Stop Managing Symptoms.<br><span>Start Resetting Systems.</span></h1>
+      <p>Practical digital tools for your money, your mind, and your boundaries — built for real life, not perfect life.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-primary">Browse Products</a>
+        <a href="#free" class="btn-ghost">Get Free Template</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>4</strong><span>Digital Products</span></div>
+        <div class="hero-stat"><strong>Instant</strong><span>Download</span></div>
+        <div class="hero-stat"><strong>100%</strong><span>Satisfaction</span></div>
+      </div>
     </div>
-    <p class="hero-sub">Instant download &middot; Works on mobile &middot; No subscription needed</p>
+    <div class="hero-img">
+      <img src="hero-mockup.png" alt="The Reset Method digital products" loading="eager">
+    </div>
   </div>
 </section>
 
-<div class="trust-bar">
+<div class="trust">
   <ul>
-    <li>&#10003; Instant digital download</li>
-    <li>&#10003; Built for biweekly paychecks</li>
-    <li>&#10003; Works in Google Sheets &amp; Excel</li>
-    <li>&#10003; No monthly subscription</li>
-    <li>&#10003; 30-day satisfaction guarantee</li>
+    <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Instant digital download</li>
+    <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Built for biweekly paychecks</li>
+    <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Google Sheets & Excel</li>
+    <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> No subscription</li>
+    <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 30-day guarantee</li>
   </ul>
 </div>
 
-<section class="section" id="products" style="background:#fff">
-  <div class="section-title">
+<section class="section" id="products">
+  <div class="section-header">
     <h2>Pick Your Reset</h2>
     <p>Four focused tools. Each one solves a specific problem — no fluff, no filler.</p>
   </div>
   <div class="products-grid">
 
-    <div class="card">
-      <div class="card-badge">Most Popular</div>
-      <div class="card-body">
-        <div class="card-emoji">&#128176;</div>
-        <div class="card-name">The Paycheck Reset</div>
-        <div class="card-tagline">Budget like you actually get paid biweekly</div>
-        <div class="card-desc">A pre-built spreadsheet that auto-calculates your finances around your real paycheck schedule — not some idealized monthly budget nobody sticks to.</div>
-        <ul class="card-bullets">
-          <li>Auto-splits income between bills, savings &amp; spending</li>
-          <li>Built-in leftover tracker so nothing slips through</li>
-          <li>Works with any paycheck amount or frequency</li>
-          <li>Instant download — Google Sheets or Excel</li>
+    <div class="product-card">
+      <div class="product-tag">Most Popular</div>
+      <div class="product-body">
+        <div class="product-icon">&#128176;</div>
+        <div class="product-name">The Paycheck Reset</div>
+        <div class="product-tagline">Budget like you actually get paid biweekly</div>
+        <div class="product-desc">A pre-built spreadsheet that auto-calculates your finances around your real paycheck schedule.</div>
+        <ul class="product-features">
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Auto-splits income between bills, savings & spending</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Built-in leftover tracker</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Works with any paycheck amount</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Google Sheets or Excel</li>
         </ul>
-        <div class="card-footer">
-          <a href="https://battlecaster.gumroad.com/l/orbme?wanted=true&utm_source=theresetmethod&utm_medium=product_card&utm_campaign=storefront" target="_blank" class="btn-buy">Buy Now — $9.99</a>
-          <a href="https://battlecaster.gumroad.com/l/orbme?wanted=true&utm_source=theresetmethod&utm_medium=mrr_card&utm_campaign=storefront" target="_blank" class="btn-mrr">+ Resell Rights — $19 <span>(sell as your own)</span></a>
+        <div class="product-footer">
+          <a href="https://battlecaster.gumroad.com/l/orbme?wanted=true" target="_blank" class="btn-buy">Get It — $9.99</a>
         </div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-body">
-        <div class="card-emoji">&#127919;</div>
-        <div class="card-name">The $500 Emergency Fund Challenge</div>
-        <div class="card-tagline">Build your first safety net in 30 days</div>
-        <div class="card-desc">A step-by-step 30-day challenge that shows you exactly where to find $500 — even when you feel like you have nothing left over.</div>
-        <ul class="card-bullets">
-          <li>Daily micro-tasks — 5 minutes a day, real results</li>
-          <li>15 specific money-finding strategies most people miss</li>
-          <li>Printable tracker to keep momentum visible</li>
-          <li>Works even on a tight, paycheck-to-paycheck income</li>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-icon">&#127919;</div>
+        <div class="product-name">$500 Emergency Fund Challenge</div>
+        <div class="product-tagline">Build your first safety net in 30 days</div>
+        <div class="product-desc">A step-by-step 30-day challenge that shows you exactly where to find $500.</div>
+        <ul class="product-features">
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Daily micro-tasks — 5 min/day</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 15 money-finding strategies</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Printable tracker included</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Works on tight income</li>
         </ul>
-        <div class="card-footer">
-          <a href="https://battlecaster.gumroad.com/l/500challenge?wanted=true&utm_source=theresetmethod&utm_medium=product_card&utm_campaign=storefront" target="_blank" class="btn-buy">Buy Now — $17</a>
+        <div class="product-footer">
+          <a href="https://battlecaster.gumroad.com/l/500challenge?wanted=true" target="_blank" class="btn-buy">Get It — $17</a>
         </div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-body">
-        <div class="card-emoji">&#129504;</div>
-        <div class="card-name">Anxious Girl's Boundaries Playbook</div>
-        <div class="card-tagline">Say no without the guilt spiral</div>
-        <div class="card-desc">Scripts, frameworks, and mindset shifts for people who over-give, over-explain, and feel exhausted by everyone else's needs — including at work.</div>
-        <ul class="card-bullets">
-          <li>Word-for-word scripts for 20 hard boundary situations</li>
-          <li>The guilt detox framework — stop apologizing for limits</li>
-          <li>Work boundaries: bosses, coworkers, after-hours texts</li>
-          <li>Instant download PDF — start reading in 60 seconds</li>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-icon">&#129504;</div>
+        <div class="product-name">Boundaries Playbook</div>
+        <div class="product-tagline">Say no without the guilt spiral</div>
+        <div class="product-desc">Scripts, frameworks, and mindset shifts for people who over-give and feel exhausted.</div>
+        <ul class="product-features">
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 20 word-for-word scripts</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Guilt detox framework</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Work boundary templates</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Instant PDF download</li>
         </ul>
-        <div class="card-footer">
-          <a href="https://battlecaster.gumroad.com/l/boundariesplaybook?wanted=true&utm_source=theresetmethod&utm_medium=product_card&utm_campaign=storefront" target="_blank" class="btn-buy">Buy Now — $29</a>
+        <div class="product-footer">
+          <a href="https://battlecaster.gumroad.com/l/boundariesplaybook?wanted=true" target="_blank" class="btn-buy">Get It — $29</a>
         </div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-body">
-        <div class="card-emoji">&#127754;</div>
-        <div class="card-name">The Calm Brain Toolkit</div>
-        <div class="card-tagline">Stop the spiral. Reset your nervous system.</div>
-        <div class="card-desc">A practical toolkit for overthinkers and anxious minds — with science-backed techniques you can use in 2 minutes or 20.</div>
-        <ul class="card-bullets">
-          <li>12 grounding techniques ranked by speed (2-20 min)</li>
-          <li>Thought audit worksheet — interrupt rumination loops</li>
-          <li>Evening wind-down protocol for racing-mind nights</li>
-          <li>Bonus: morning nervous system reset routine</li>
+    <div class="product-card">
+      <div class="product-body">
+        <div class="product-icon">&#127754;</div>
+        <div class="product-name">Calm Brain Toolkit</div>
+        <div class="product-tagline">Stop the spiral. Reset your nervous system.</div>
+        <div class="product-desc">Science-backed techniques for overthinkers and anxious minds — use in 2 minutes or 20.</div>
+        <ul class="product-features">
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 12 grounding techniques</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Thought audit worksheet</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Evening wind-down protocol</li>
+          <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Morning reset routine</li>
         </ul>
-        <div class="card-footer">
-          <a href="https://battlecaster.gumroad.com/l/calmbrain?wanted=true&utm_source=theresetmethod&utm_medium=product_card&utm_campaign=storefront" target="_blank" class="btn-buy">Buy Now — $32</a>
+        <div class="product-footer">
+          <a href="https://battlecaster.gumroad.com/l/calmbrain?wanted=true" target="_blank" class="btn-buy">Get It — $32</a>
         </div>
       </div>
     </div>
@@ -214,125 +290,121 @@
   </div>
 </section>
 
-<section class="bundle-section" id="bundle">
+<section class="bundle" id="bundle">
   <div class="bundle-inner">
-    <div class="badge">Best Value</div>
+    <div class="hero-badge" style="margin-bottom:1.5rem">Best Value</div>
     <h2>The Full Reset Bundle</h2>
-    <p class="bundle-desc">All 4 products + Canva template files + Master Resell Rights. Buy once, keep forever — or resell as your own and keep 100% of revenue.</p>
-    <div class="bundle-includes">
-      <h4>What's included:</h4>
+    <p class="bundle-desc">All 4 products + Canva templates + Master Resell Rights. Buy once, keep forever — or resell as your own.</p>
+    <div class="bundle-grid">
+      <h4>Everything Included</h4>
       <ul>
-        <li>All 4 Reset Method digital products</li>
-        <li>Canva editable template files</li>
-        <li>Master Resell Rights license</li>
-        <li>Sell as your own — keep 100% of revenue</li>
+        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> All 4 Reset Method digital products</li>
+        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Canva editable template files</li>
+        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Master Resell Rights license</li>
+        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Sell as your own — keep 100% revenue</li>
       </ul>
     </div>
     <div class="bundle-price">
       <span class="old">$88</span>
       <span class="new">$47</span>
-      <span class="save">Save $41</span>
+      <span class="save-badge">Save $41</span>
     </div>
-    <a href="https://battlecaster.gumroad.com/l/fullresetbundle?wanted=true&utm_source=theresetmethod&utm_medium=bundle_section&utm_campaign=storefront" target="_blank" class="btn-bundle">Get the Full Bundle — $47</a>
-    <p class="bundle-note">Includes Master Resell Rights — sell all 4 products as your own, keep 100%</p>
+    <a href="https://battlecaster.gumroad.com/l/fullresetbundle?wanted=true" target="_blank" class="btn-bundle">Get the Full Bundle — $47</a>
   </div>
 </section>
 
-<section class="free-section" id="free">
+<section class="free" id="free">
   <div class="free-inner">
-    <div class="free-emoji">&#127873;</div>
     <h2>Free: 1-Page Budget Reset Template</h2>
     <p>Before you buy anything — try this. A single-page budget template you can fill out in 10 minutes. No email required.</p>
-    <a href="https://battlecaster.gumroad.com/l/freebudget?utm_source=theresetmethod&utm_medium=free_section&utm_campaign=storefront" target="_blank" class="btn-free">Download Free Template</a>
-    <p class="free-sub">No signup required &middot; Instant access &middot; Google Sheets + Excel</p>
+    <a href="https://battlecaster.gumroad.com/l/freebudget" target="_blank" class="btn-free">Download Free Template</a>
+    <p style="color:var(--gray-400);font-size:.8rem;margin-top:.8rem">No signup required &middot; Instant access &middot; Google Sheets + Excel</p>
   </div>
 </section>
 
 <section class="testimonials">
-  <div class="section-title"><h2>Real results from real people</h2></div>
+  <div class="section-header"><h2>Real results from real people</h2></div>
   <div class="testimonials-grid">
     <div class="testimonial">
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <blockquote>"I've tried 6 budget apps. This spreadsheet is the only thing I've actually stuck with for more than 3 weeks."</blockquote>
       <cite><strong>Brianna T.</strong><span>Paycheck-to-paycheck nurse, single mom</span></cite>
     </div>
     <div class="testimonial">
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <blockquote>"The $500 challenge felt impossible. I found $520 in month one by following the daily tasks."</blockquote>
       <cite><strong>Marcus L.</strong><span>Rideshare driver, Atlanta</span></cite>
     </div>
     <div class="testimonial">
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <blockquote>"The boundaries scripts saved my job. I was about to quit because I couldn't say no to extra shifts."</blockquote>
       <cite><strong>Destiny R.</strong><span>Retail manager</span></cite>
     </div>
   </div>
 </section>
 
-<section class="tools-section" id="tools">
+<section class="tools" id="tools">
   <div class="tools-inner">
-    <div class="section-title">
+    <div class="section-header">
       <h2>Tools I Recommend</h2>
-      <p>The physical tools I pair with every budget template. The right supplies turn a download into a daily habit.</p>
+      <p>The physical tools that turn a digital download into a daily habit.</p>
     </div>
-    <div class="tools-disclosure">
-      <strong>Disclosure:</strong> Some links below are Amazon affiliate links. I may earn a small commission at no extra cost to you — I only recommend things I'd actually use.
-    </div>
+    <div class="tools-disclosure"><strong>Disclosure:</strong> Some links are Amazon affiliate links. I may earn a small commission at no extra cost to you.</div>
     <div class="tools-grid">
-
       <div class="tool-card">
         <div class="tool-label">For Printing</div>
-        <div class="tool-name">HP Multipurpose Printer Paper (500-sheet ream)</div>
-        <div class="tool-why">If printing feels inconvenient, you won't do it. Keep a ream on hand and your budget actually gets printed.</div>
-        <a href="https://www.amazon.com/s?k=HP+multipurpose+printer+paper+500+sheet+ream&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+        <div class="tool-name">HP Printer Paper (500-sheet)</div>
+        <div class="tool-why">Keep a ream on hand and your budget actually gets printed.</div>
+        <a href="https://www.amazon.com/s?k=HP+multipurpose+printer+paper+500+sheet+ream&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon &rarr;</a>
       </div>
-
       <div class="tool-card">
         <div class="tool-label">For Organizing</div>
-        <div class="tool-name">Budget Binder with Zipper Pouch</div>
-        <div class="tool-why">One physical home for all your monthly printouts. Keeps your system visible and off the kitchen counter.</div>
-        <a href="https://www.amazon.com/s?k=budget+binder+zipper+pouch+money+organizer&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+        <div class="tool-name">Budget Binder + Zipper Pouch</div>
+        <div class="tool-why">One physical home for all your monthly printouts.</div>
+        <a href="https://www.amazon.com/s?k=budget+binder+zipper+pouch+money+organizer&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon &rarr;</a>
       </div>
-
       <div class="tool-card">
         <div class="tool-label">For Cash Tracking</div>
-        <div class="tool-name">Cash Envelope Wallet System</div>
-        <div class="tool-why">Pairs perfectly with a zero-based budget template. Physical cash = physical limit. Hard to overspend when the envelope is empty.</div>
-        <a href="https://www.amazon.com/s?k=cash+envelope+wallet+budget+system&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+        <div class="tool-name">Cash Envelope Wallet</div>
+        <div class="tool-why">Physical cash = physical limit. Hard to overspend when the envelope is empty.</div>
+        <a href="https://www.amazon.com/s?k=cash+envelope+wallet+budget+system&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon &rarr;</a>
       </div>
-
       <div class="tool-card">
         <div class="tool-label">For Color-Coding</div>
         <div class="tool-name">Zebra Mildliner Highlighters</div>
-        <div class="tool-why">Green = on track. Yellow = watch it. Pink = stop. Visual cues work better than willpower.</div>
-        <a href="https://www.amazon.com/s?k=zebra+mildliner+highlighters+set&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+        <div class="tool-why">Green = on track. Yellow = watch it. Pink = stop.</div>
+        <a href="https://www.amazon.com/s?k=zebra+mildliner+highlighters+set&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon &rarr;</a>
       </div>
-
       <div class="tool-card">
-        <div class="tool-label">Must-Read Book</div>
-        <div class="tool-name">I Will Teach You To Be Rich — Ramit Sethi</div>
-        <div class="tool-why">Not "spend less, save more" advice. This book rewired how I actually think about money. Read it once a year.</div>
-        <a href="https://www.amazon.com/s?k=I+Will+Teach+You+To+Be+Rich+Ramit+Sethi&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+        <div class="tool-label">Must-Read</div>
+        <div class="tool-name">I Will Teach You To Be Rich</div>
+        <div class="tool-why">Not "spend less" advice. This book rewired how I think about money.</div>
+        <a href="https://www.amazon.com/s?k=I+Will+Teach+You+To+Be+Rich+Ramit+Sethi&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon &rarr;</a>
       </div>
-
       <div class="tool-card">
-        <div class="tool-label">Must-Read Book</div>
-        <div class="tool-name">The Total Money Makeover — Dave Ramsey</div>
-        <div class="tool-why">The most recommended book in every paycheck-to-paycheck community. The debt snowball method is simple and it works.</div>
-        <a href="https://www.amazon.com/s?k=Total+Money+Makeover+Dave+Ramsey&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon</a>
+        <div class="tool-label">Must-Read</div>
+        <div class="tool-name">The Total Money Makeover</div>
+        <div class="tool-why">The debt snowball method is simple and it works.</div>
+        <a href="https://www.amazon.com/s?k=Total+Money+Makeover+Dave+Ramsey&tag=battlelabs-20" class="tool-link" target="_blank" rel="nofollow sponsored">View on Amazon &rarr;</a>
       </div>
-
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="footer-brand">The Reset Method</div>
-  <div class="footer-tagline">Practical tools for real life. No fluff. No subscriptions.</div>
-  <div class="footer-links">
-    <a href="https://twitter.com/casbattle" target="_blank">Twitter/X</a>
-    <a href="https://instagram.com/casey.b.designs" target="_blank">Instagram</a>
-    <a href="https://pinterest.com/theresetmethod" target="_blank">Pinterest</a>
-    <a href="https://battlecaster.gumroad.com" target="_blank">Gumroad Store</a>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">The Reset Method</div>
+      <div class="footer-tagline">Practical tools for real life. No fluff. No subscriptions.</div>
+    </div>
+    <div class="footer-socials">
+      <a href="https://twitter.com/casbattle" target="_blank" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+      <a href="https://instagram.com/casey.b.designs" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+      <a href="https://pinterest.com/theresetmethod" target="_blank" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12.017 24c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641 0 12.017 0z"/></svg></a>
+      <a href="https://battlecaster.gumroad.com" target="_blank" aria-label="Gumroad"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 3.6c4.636 0 8.4 3.764 8.4 8.4h-3.6c0-2.647-2.153-4.8-4.8-4.8S7.2 9.353 7.2 12s2.153 4.8 4.8 4.8c1.906 0 3.547-1.116 4.32-2.728l3.312 1.104C18.384 18.48 15.432 20.4 12 20.4c-4.636 0-8.4-3.764-8.4-8.4S7.364 3.6 12 3.6z"/></svg></a>
+    </div>
   </div>
-  <div class="footer-copy">&copy; 2026 The Reset Method &middot; All products delivered as instant digital downloads</div>
+  <div class="footer-copy">&copy; 2026 The Reset Method. All products delivered as instant digital downloads.</div>
 </footer>
 
 </body>

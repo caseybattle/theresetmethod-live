@@ -404,11 +404,11 @@
     <span class="section-label">Stay in the Loop</span>
     <h2>Real numbers.<br><em style="font-style:italic;color:var(--accent)">No filters.</em></h2>
     <p>Get the free Budget Reset toolkit + weekly notes on building a digital product business from scratch — zero fluff, real revenue numbers, and what's actually working.</p>
-    <form class="newsletter-form" action="https://app.gumroad.com/follow_from_embed_form" method="post" id="gumroad-follow-form-embed">
-      <input type="hidden" name="seller_id" value="battlecaster">
-      <input class="newsletter-input" type="email" placeholder="your@email.com" name="email" required>
-      <button class="btn-newsletter" type="submit">Join Free</button>
+    <form class="newsletter-form" id="signup-form">
+      <input class="newsletter-input" id="signup-email" type="email" placeholder="your@email.com" name="email" required>
+      <button class="btn-newsletter" type="submit" id="signup-btn">Join Free</button>
     </form>
+    <p id="signup-success" style="display:none;color:#2D7D46;font-weight:600;font-size:.9rem;margin-top:1rem;">You're in. Welcome to the list.</p>
     <p class="newsletter-fine">No spam. Unsubscribe anytime. Weekly notes on building a digital product business — real numbers, no fluff.</p>
     <div class="newsletter-social">
       <a href="https://twitter.com/casbattle" target="_blank">
@@ -523,6 +523,27 @@ const obs = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
 }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Newsletter signup
+const signupForm = document.getElementById('signup-form');
+if (signupForm) {
+  signupForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('signup-email').value;
+    const btn = document.getElementById('signup-btn');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    try {
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+    } catch (_) {}
+    signupForm.style.display = 'none';
+    document.getElementById('signup-success').style.display = 'block';
+  });
+}
 
 // Nav scroll
 window.addEventListener('scroll', () => {
